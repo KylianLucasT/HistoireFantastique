@@ -1,0 +1,117 @@
+header {
+    background-color: #6b5b4a; /* Couleur du Fond      */
+    color: #f7f1e3;            /* Couleur de la police */
+    padding: 20px;
+    text-align: center;          
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+@font-face {
+    font-family: 'MedievalFont';
+    src: url('../POLICES/CELTG___.TTF') format('truetype');
+  }
+
+body {
+    font-family: 'MedievalFont', serif;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    background-color: #f7f1e3;
+    color: #4a3c2e;
+}
+
+/* Style pour la barre de navigation */
+.navbar {
+    position: fixed; /* Fixe la barre en haut de la page */
+    top: 0; /* Positionne la barre tout en haut */
+    left: 0; /* Aligne la barre à gauche */
+    width: 100%; /* La barre occupera toute la largeur de la fenêtre */
+    height: 70px;
+    background-color: #6b5b4a; /* Ajustez la couleur de fond selon votre design */
+    z-index: 1000; /* Assure que la barre reste au-dessus des autres éléments */
+}
+
+/* Style pour les éléments de la navigation */
+.navbar ul {
+    list-style-type: none; /* Supprimer les puces */
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrer les sections */
+}
+
+.navbar li {
+    margin: 0 3%; /* Espacement entre les sections */
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+/* Style pour le survol (hover) */
+.navbar a:hover {
+    background-color: hsl(31, 18%, 35%);
+    border-radius: 5px;
+}
+
+#image {
+    height: 50px;
+    width: auto; /* ajuste la largeur automatiquement selon la hauteur */
+}
+
+/* Barre de recheche */
+.search-container {
+    position: relative;
+    width: 200px;
+
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Suggestion de recherches */
+#suggestions {
+    position: absolute;
+    background-color: #f7f1e3;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 4px;
+}
+
+#suggestions p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#suggestions p:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #6b5b4a;
+    color: #f7f1e3;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}

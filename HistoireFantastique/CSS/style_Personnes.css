@@ -1,0 +1,127 @@
+.content {
+    display: flex;
+    justify-content: space-between; /* Ajoute un espace égal entre les sections */
+    margin: 20px;
+    gap: 15px; /* Espace entre les sections */
+}
+
+.image-container, .info-section {
+    margin-top: 15px;
+    flex: 1; /* Chaque élément occupe une part égale de la largeur */
+    max-width: 33%; /* Limite chaque section à environ un tiers */
+}
+
+.image-container img {
+    margin-top: 7.5dvh;
+    width: 100%; /* L'image occupe la largeur complète de son conteneur */
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 70dvh;
+    font-size: 18px;
+    max-height: 600px; /* Limite la hauteur de la section pour activer le défilement */
+    overflow-y: auto; /* Ajoute une barre de défilement vertical */
+}
+
+.info-section h2 {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.info-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.emblemes {
+    display: flex;
+    justify-content: space-between; /* Espace les cartes de manière égale */
+}
+
+.card {
+    text-align: center;
+    width: 150px; /* Largeur de chaque carte */
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%; /* Image s'adapte à la largeur de la carte */
+    height: auto;
+}
+
+.info-paragraph {
+    text-align: justify;
+}
+
+.info-paragraph a {
+    text-decoration: none;
+}
+
+.rouge  { color: #A7001E; }
+.vert   { color: #679436; }
+.orange { color: #DAAB3A; }
+
+
+.bloc-section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.bloc-section h3 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Disposition en colonnes avec barre de séparation */
+.bloc-columns {
+    display: flex;
+    gap: 20px; /* Espace entre les deux colonnes */
+}
+
+.left-column,
+.right-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace disponible */
+}
+
+/* Barre de séparation */
+.left-column {
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+}
+
+.right-column {
+    padding-left: 15px;
+}
+
+.bloc-section h4 {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Style des liens sans décoration */
+.bloc-section a {
+    text-decoration: none; /* Enlève la décoration (soulignement) des liens */
+}
+
+.bloc-section p {
+    text-align: center;
+    font-size: 0.75em;
+    color: #333;
+    margin-left: 20px;
+}

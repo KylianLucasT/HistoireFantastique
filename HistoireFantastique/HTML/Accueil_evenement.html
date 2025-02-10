@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" data-level="1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - Événement</title>
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style_Accueil_Evenements.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul>
+            <!-- Icon du site -->
+            <li>
+                <img src="../IMAGES/Icon/Logo2_KikHistoires_Sombre_Transparent.png" alt="Icon KikHistoires" id="image">
+            </li>
+
+            <!-- Sections de la barre de navigation -->
+            <li><a href="Accueil_carte.html"     >CARTE</a>     </li>
+            <li><a href="Accueil_hierarchie.html">HIÉRARCHIE</a></li>
+            <li><a href="Accueil_religions.html" >RELIGIONS</a> </li>
+            <li><a href="Accueil_evenement.html" >ÉVÉNEMENTS</a></li>
+
+            <!-- Barre de recherche à droite -->
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Rechercher..." onkeyup="showSuggestions(this.value)">
+                    <div id="suggestions"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2>Index</h2>
+        <ul>
+            <li><a href="#an103">An 103</a></li>
+            <li><a href="#an324">An 324</a></li>
+            <li><a href="#an680">An 680</a></li>
+            
+        </ul>
+    </aside>
+    <main>
+        <section id="an103">
+            <h3>An 103</h3>
+            <ul>
+                <li><a href="../EVENEMENTS/An103/Journal_Commandant_Cherreau.html">Journal de bord du Commandant Cherreau</a></li>
+            </ul>
+        </section>
+        <section id="an324">
+            <h3>An 324</h3>
+            <ul>
+                <li><a href="../EVENEMENTS/An324/Proce_Veillelune.html">Procé de Veillelune</a></li>
+            </ul>
+        </section>
+        <section id="an680">
+            <h3>An 680</h3>
+            <ul>
+                
+            </ul>
+        </section>
+    </main>
+
+
+    <script src="../JS/script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 KikHistoires - Tous droits réservés</p>
+</footer>
+</html>

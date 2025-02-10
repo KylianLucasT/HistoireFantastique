@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" data-level="1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - Religions</title>
+    
+    <link rel="stylesheet" href="../CSS/style_Accueil_Religions.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul>
+            <!-- Icon du site -->
+            <li>
+                <img src="../IMAGES/Icon/Logo2_KikHistoires_Sombre_Transparent.png" alt="Icon KikHistoires" id="image">
+            </li>
+
+            <!-- Sections de la barre de navigation -->
+            <li><a href="Accueil_carte.html"     >CARTE</a>     </li>
+            <li><a href="Accueil_hierarchie.html">HIÉRARCHIE</a></li>
+            <li><a href="Accueil_religions.html" >RELIGIONS</a> </li>
+            <li><a href="Accueil_evenement.html" >ÉVÉNEMENTS</a></li>
+
+            <!-- Barre de recherche à droite -->
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Rechercher..." onkeyup="showSuggestions(this.value)">
+                    <div id="suggestions"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <button id="backButton">Retour</button>
+    <div class="container">
+        <div class="circle" data-info="info1">Cercle 1</div>
+        <div class="circle" data-info="info2">Cercle 2</div>
+        <div class="circle" data-info="info3">Cercle 3</div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/script_Accueil_Religions.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 KikHistoires - Tous droits réservés</p>
+</footer>
+</html>

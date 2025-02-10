@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" data-level="1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil - Événement</title>
+    
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/style_Documents.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul>
+            <!-- Icon du site -->
+            <li>
+                <img src="../../IMAGES/Icon/Logo2_KikHistoires_Sombre_Transparent.png" alt="Icon KikHistoires" id="image">
+            </li>
+
+            <!-- Sections de la barre de navigation -->
+            <li><a href="../../HTML/Accueil_carte.html"     >CARTE</a>     </li>
+            <li><a href="../../HTML/Accueil_hierarchie.html">HIÉRARCHIE</a></li>
+            <li><a href="../../HTML/Accueil_religions.html" >RELIGIONS</a> </li>
+            <li><a href="../../HTML/Accueil_evenement.html" >ÉVÉNEMENTS</a></li>
+
+            <!-- Barre de recherche à droite -->
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Rechercher..." onkeyup="showSuggestions(this.value)">
+                    <div id="suggestions"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <img src="../../IMAGES/Document/Document_Fond_Bureau.png" alt="Document fond bureau" class="img_bck">
+
+    <div class="page" id="page-1">
+        <div class="content">
+            <img src="../../IMAGES/Document/Journal_Commandant_Cherreau/Page1.png" alt="Page 1 Journal du Commandant Cherreau" class="img_page">
+        </div>
+    </div>
+    <div class="page" id="page-2">
+        <div class="content">
+            <img src="../../IMAGES/Document/Journal_Commandant_Cherreau/Page2.png" alt="Page 2 Journal du Commandant Cherreau" class="img_page">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="prev" class="btn">Précédente</button>
+        <button id="next" class="btn">Suivante</button>
+    </div>
+
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/script_Documents.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 KikHistoires - Tous droits réservés</p>
+</footer>
+</html>
